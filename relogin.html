@@ -42,6 +42,15 @@
 	<meta property="og:image" content="http://www.byui.edu/images/">
 	<meta property="og:see_also" content="">
 
+    <script>
+    
+    const loggegdIn = localStorage.getItem('loggedIn');
+    if (loggegdIn == "True") {
+        const iframeBody = document.querySelector(".iframeBody");
+        iframeBody.addClass("hideThis")
+    }
+    
+    </script>
 
     <style>
         /* Simple Header Footer Styles */
@@ -312,7 +321,7 @@
 
     </style>
 </head>
-<body class="vsc-initialized">
+<body class="vsc-initialized iframeBody">
     <header>
         <div class="header-content">
             <a class="logo" href="https://www.byui.edu/">
