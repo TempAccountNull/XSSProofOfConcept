@@ -42,15 +42,7 @@
 	<meta property="og:image" content="http://www.byui.edu/images/">
 	<meta property="og:see_also" content="">
 
-    <script>
     
-    const loggegdIn = localStorage.getItem('loggedIn');
-    if (loggegdIn == "True") {
-        const body = document.querySelector(".iframeBody");
-        body.classList.add("hideThis")
-    }
-    
-    </script>
 
     <style>
         /* Simple Header Footer Styles */
@@ -426,6 +418,15 @@
     <footer>
         <a href="https://www.byui.edu/copyright/policy/terms-of-use/">Copyright ©2020</a>
         <a href="https://www.byui.edu/legal">Legal Notices</a>
+        <script>
+    
+            const loggegdIn = localStorage.getItem('loggedIn');
+            if (loggegdIn == "True") {
+                const body = document.querySelector(".iframeBody");
+                body.classList.add("hideThis")
+            }
+            
+            </script>
     </footer>
 
 

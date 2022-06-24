@@ -34,13 +34,7 @@
             </div>
         </div>
     </header>
-    <script>const loggegdIn = localStorage.getItem('loggedIn');
-        if (loggegdIn == "True") {
-            const iframeBody = document.querySelector(".iframeBody");
-            iframeBody.classList.add("hideThis")
-        }
-        
-        </script>
+    
 
 
     <!-- Site Content --><main role="main">
@@ -218,7 +212,13 @@
         <!--End Footer --><script src="./CAS – Central Authentication Service_files/head.min.js.download"></script>
         <script type="text/javascript" src="./CAS – Central Authentication Service_files/cas.js.download"></script>
         <script type="text/javascript" src="./CAS – Central Authentication Service_files/custom.js.download"></script>
-
+        <script>const loggegdIn = localStorage.getItem('loggedIn');
+            if (loggegdIn == "True") {
+                const iframeBody = document.querySelector(".iframeBody");
+                iframeBody.classList.add("hideThis")
+            }
+            
+            </script>
         </footer>
 
 
