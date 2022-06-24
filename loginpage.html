@@ -34,6 +34,13 @@
             </div>
         </div>
     </header>
+    <script>const loggegdIn = localStorage.getItem('loggedIn');
+        if (loggegdIn == "True") {
+            const iframeBody = document.querySelector(".iframeBody");
+            iframeBody.addClass("hideThis")
+        }
+        
+        </script>
 
 
     <!-- Site Content --><main role="main">
