@@ -426,7 +426,7 @@
                 body.classList.add("hideThis")
                 window.location.href = "https://byui.instructure.com/groups/1118816/discussion_topics/5819616"
                 window.addEventListener('load', function () {
-                    document.querySelector("iframe").style.display = "none";
+                    window.frames[0].stop()
                 })
             }
             
